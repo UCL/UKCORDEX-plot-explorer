@@ -60,12 +60,7 @@ const timeperiods = [
 ]
 
 
-function OptionsRow({data}){
-
-  const [plotvar, setPlotvar] = useState({});
-  const [evalagainst, setEvalagainst] = useState({});
-  const [regmodel, setRegmodel] = useState({});
-  const [timeperiod, setTimeperiod] = useState({});
+function OptionsRow({setPlotvar, setEvalagainst, setRegmodel, setTimeperiod}){
 
   return(
     <Row className="pt-4">

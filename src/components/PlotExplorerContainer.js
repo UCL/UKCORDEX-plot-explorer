@@ -7,35 +7,24 @@ import Row from 'react-bootstrap/Row';
 
 function PlotExplorerRow({data}){
 
-  const getPlotvar = (plotvar) => {
-    return (plotvar);
-  }
-
-  const getEvalagainst = (evalagainst) => {
-    return (evalagainst);
-  }
-
-  const getRegmodel = (regmodel) => {
-    return (regmodel);
-  }
-
-  const getTimeperiod = (timeperiod) => {
-    return(timeperiod);
-  }
+  const [plotvar, setPlotvar] = useState({});
+  const [evalagainst, setEvalagainst] = useState({});
+  const [regmodel, setRegmodel] = useState({});
+  const [timeperiod, setTimeperiod] = useState({});
 
   return(
     <Container>
       <OptionsRow
-        getPlotvar={getPlotvar}
-        getEvalagainst={getEvalagainst}
-        getRegmodel={getRegmodel}
-        getTimeperiod={getTimeperiod}
+        plotvar={setPlotvar}
+        evalagainst={setEvalagainst}
+        regmodel={setRegmodel}
+        timeperiod={setTimeperiod}
       />
       <FigureRow
-        plotvar={getPlotvar}
-        evalagainst={getEvalagainst}
-        regmodel={getRegmodel}
-        timeperiod={getTimeperiod}/>
+        plotvar={plotvar}
+        evalagainst={evalagainst}
+        regmodel={regmodel}
+        timeperiod={timeperiod}/>
       <Row className="py-5">
         <Button
           variant="outline-info"
