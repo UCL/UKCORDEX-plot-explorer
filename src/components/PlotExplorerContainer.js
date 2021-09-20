@@ -27,10 +27,10 @@ function PlotExplorerRow() {
   return (
     <Container>
       <OptionsRow
-        plotvar={setPlotvar}
-        evalagainst={setEvalagainst}
-        regmodel={setRegmodel}
-        timeperiod={setTimeperiod}
+        setPlotvar={setPlotvar}
+        setEvalagainst={setEvalagainst}
+        setRegmodel={setRegmodel}
+        setTimeperiod={setTimeperiod}
       />
       {dataRows.map((row) => {
         return (
