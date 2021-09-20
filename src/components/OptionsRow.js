@@ -60,10 +60,7 @@ const timeperiods = [
 ]
 
 
-function OptionsRow({getPlotvar,
-                     getEvalagainst,
-                     getRegmodel,
-                     getTimeperiod}){
+function OptionsRow({data}){
 
   const [plotvar, setPlotvar] = useState({});
   const [evalagainst, setEvalagainst] = useState({});
@@ -75,28 +72,28 @@ function OptionsRow({getPlotvar,
        <Col>
          <Select
            options={plotvars}
-           onChange={() => getPlotvar(plotvar)}
+           onChange={setPlotvar}
            placeholder="Select variable"
            />
        </Col>
        <Col>
          <Select
            options={evalagainsts}
-           onChange={() => getEvalagainst(evalagainst)}
+           onChange={setEvalagainst}
            placeholder="Select model to evaluate against"
            />
        </Col>
        <Col>
          <Select
            options={regmodels}
-           onChange={() => getRegmodel(regmodel)}
+           onChange={setRegmodel}
            placeholder="Select regional model"
            />
        </Col>
        <Col>
          <Select
            options={timeperiods}
-           onChange={() => getTimeperiod(timeperiod)}
+           onChange={setTimeperiod}
            placeholder="Select time period"
            />
        </Col>
