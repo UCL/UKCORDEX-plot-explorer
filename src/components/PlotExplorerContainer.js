@@ -30,7 +30,6 @@ function PlotExplorerRow() {
   };
 
 
-
   const delDataRow = (index) => {
     console.log(index);
     console.log(dataRows);
@@ -40,39 +39,11 @@ function PlotExplorerRow() {
 
   return (
     <Container>
+
       {dataRows.map((row, index) => {
         console.log(index);
-        if (index==0){
-          return (
-            <>
-              <OptionsRow
-                setPlotvar={setPlotvar}
-                setEvalagainst={setEvalagainst}
-                setRegmodel={setRegmodel}
-                setTimeperiod={setTimeperiod}
-                row={row}
-              />
-              <FigureRow
-                plotvar={row.plotvar}
-                evalagainst={row.evalagainst}
-                regmodel={row.regmodel}
-                timeperiod={row.timeperiod}
-              />
-            </>
-          );
-        }
-        else {
-
-        }
         return (
           <>
-            <OptionsRow
-              setPlotvar={setPlotvar}
-              setEvalagainst={setEvalagainst}
-              setRegmodel={setRegmodel}
-              setTimeperiod={setTimeperiod}
-              row={row}
-            />
             <FigureRow
               plotvar={row.plotvar}
               evalagainst={row.evalagainst}
@@ -82,6 +53,12 @@ function PlotExplorerRow() {
           </>
         );
       })}
+      <OptionsRow
+        setPlotvar={setPlotvar}
+        setEvalagainst={setEvalagainst}
+        setRegmodel={setRegmodel}
+        setTimeperiod={setTimeperiod}
+      />
       <Row className="py-5">
         <Button onClick={() => addDataRow()} variant="outline-info">
           Show plot
