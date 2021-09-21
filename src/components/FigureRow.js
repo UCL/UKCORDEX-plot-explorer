@@ -13,9 +13,6 @@ function FigureRow({plotvar, evalagainst, regmodel, timeperiod}){
            alt="Image NOT found"
            src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_${plotvar.value}_${evalagainst.value}_${regmodel.value}_${timeperiod.value}.png`}
          />
-         <Figure.Caption>
-           Debug: Plot showing {plotvar.value} - {evalagainst.value} - {regmodel.value} - {timeperiod.value}
-         </Figure.Caption>
        </Figure>
      </Row>
   );
