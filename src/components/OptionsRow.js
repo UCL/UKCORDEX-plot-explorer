@@ -23,8 +23,8 @@ const plotvars = [
 ];
 
 const evalagainsts = [
-  { value: 'HadUK-grid', label: 'HadUK-grid' },
-  { value: 'ECMWF-ERAINT', label: 'ECMWF-ERAINT' }
+  { value: 'ECMWF-ERAINT', label: 'ECMWF-ERAINT' },
+  { value: 'HadUK-grid', label: 'HadUK-grid' }
 ]
 
 const regmodels = [
