@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/plot-explorer-clean/static/js/main.88c7c13d.chunk.js",
-    "main.js.map": "/plot-explorer-clean/static/js/main.88c7c13d.chunk.js.map",
+    "main.js": "/plot-explorer-clean/static/js/main.a6eb2f3e.chunk.js",
+    "main.js.map": "/plot-explorer-clean/static/js/main.a6eb2f3e.chunk.js.map",
     "runtime-main.js": "/plot-explorer-clean/static/js/runtime-main.64f965df.js",
     "runtime-main.js.map": "/plot-explorer-clean/static/js/runtime-main.64f965df.js.map",
     "static/css/2.818011ed.chunk.css": "/plot-explorer-clean/static/css/2.818011ed.chunk.css",
-    "static/js/2.c7d23d56.chunk.js": "/plot-explorer-clean/static/js/2.c7d23d56.chunk.js",
-    "static/js/2.c7d23d56.chunk.js.map": "/plot-explorer-clean/static/js/2.c7d23d56.chunk.js.map",
+    "static/js/2.e5414671.chunk.js": "/plot-explorer-clean/static/js/2.e5414671.chunk.js",
+    "static/js/2.e5414671.chunk.js.map": "/plot-explorer-clean/static/js/2.e5414671.chunk.js.map",
     "static/js/3.7769e5ef.chunk.js": "/plot-explorer-clean/static/js/3.7769e5ef.chunk.js",
     "static/js/3.7769e5ef.chunk.js.map": "/plot-explorer-clean/static/js/3.7769e5ef.chunk.js.map",
     "index.html": "/plot-explorer-clean/index.html",
     "static/css/2.818011ed.chunk.css.map": "/plot-explorer-clean/static/css/2.818011ed.chunk.css.map",
-    "static/js/2.c7d23d56.chunk.js.LICENSE.txt": "/plot-explorer-clean/static/js/2.c7d23d56.chunk.js.LICENSE.txt"
+    "static/js/2.e5414671.chunk.js.LICENSE.txt": "/plot-explorer-clean/static/js/2.e5414671.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.64f965df.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.c7d23d56.chunk.js",
-    "static/js/main.88c7c13d.chunk.js"
+    "static/js/2.e5414671.chunk.js",
+    "static/js/main.a6eb2f3e.chunk.js"
   ]
 }
