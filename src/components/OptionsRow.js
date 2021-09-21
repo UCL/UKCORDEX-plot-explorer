@@ -73,16 +73,16 @@ function OptionsRow({setPlotvar, setEvalagainst, setRegmodel, setTimeperiod}){
        </Col>
        <Col>
          <Select
-           options={evalagainsts}
-           onChange={setEvalagainst}
-           placeholder="Select model to evaluate against"
+           options={regmodels}
+           onChange={setRegmodel}
+           placeholder="Select regional model"
            />
        </Col>
        <Col>
          <Select
-           options={regmodels}
-           onChange={setRegmodel}
-           placeholder="Select regional model"
+           options={evalagainsts}
+           onChange={setEvalagainst}
+           placeholder="Evaluate against"
            />
        </Col>
        <Col>
