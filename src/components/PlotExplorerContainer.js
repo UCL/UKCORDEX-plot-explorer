@@ -7,63 +7,48 @@ import Row from "react-bootstrap/Row";
 
 function PlotExplorerRow() {
   const [plotvar, setPlotvar] = useState(null);
-  const [evalagainst, setEvalagainst] = useState(null);
-  const [regmodel, setRegmodel] = useState(null);
-  const [timeperiod, setTimeperiod] = useState(null);
-  const [dataRows, setDataRows] = useState([]);
+  const [season, setSeason] = useState(null);
+  const [period, setPeriod] = useState(null);
+  const [plottype, setPlottype] = useState(null);
 
-  console.log(plotvar, evalagainst, regmodel, timeperiod);
-
-  const addDataRow = () => {
+  const showPlot = () => {
     if (plotvar === null || plotvar === undefined) {
       console.log("error, you didnt make enough selections");
       return;
     }
-    const dataRow = {
+    const plotSet = {
       plotvar: plotvar,
-      evalagainst: evalagainst,
-      regmodel: regmodel,
-      timeperiod: timeperiod,
+      season: season,
+      period: period,
+      plottype: plottype,
     };
-    console.log(dataRows);
-    setDataRows([...dataRows, dataRow]);
+    console.log(plotSet);
   };
 
-
-  const delDataRow = (index) => {
-    console.log(index);
-    console.log(dataRows);
-    console.log(dataRows.splice(index, 1));
-    setDataRows(dataRows.splice(index, 1));
-  };
+  console.log(plotvar, season, period, plottype);
 
   return (
     <Container>
-
-      {dataRows.map((row, index) => {
-        console.log(index);
-        return (
-          <>
-            <FigureRow
-              plotvar={row.plotvar}
-              evalagainst={row.evalagainst}
-              regmodel={row.regmodel}
-              timeperiod={row.timeperiod}
-            />
-          </>
-        );
-      })}
       <OptionsRow
         setPlotvar={setPlotvar}
-        setEvalagainst={setEvalagainst}
-        setRegmodel={setRegmodel}
-        setTimeperiod={setTimeperiod}
+        setSeason={setSeason}
+        setPeriod={setPeriod}
+        setPlottype={setPlottype}
       />
+
       <Row className="py-5">
-        <Button onClick={() => addDataRow()} variant="outline-info">
+        <Button onClick={() => showPlot()} variant="outline-info">
           Show plot
         </Button>{" "}
       </Row>
+      
+      <FigureRow
+        plotvar={plotvar}
+        season={season}
+        period={period}
+        plottype={plottype}
+      />
+
     </Container>
   );
 }
