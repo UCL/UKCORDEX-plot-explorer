@@ -1,7 +1,7 @@
 {
   "name": "dropdown2",
   "version": "0.1.0",
-  "homepage": "https://UCL.github.io/UKCORDEX-plot-explorer/",
+  "homepage": "https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
