@@ -4,17 +4,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const plotvars = [
-  { value: 'snw', label: 'Surface Snow Amount' },
+  { value: 'fwd', label: 'Surface Snow Amount' },
+  { value: 'tas', label: 'Daily Near-Surface Air Temperature' },
   { value: 'tasmax', label: 'Daily Maximum Near-Surface Air Temperature' },
+  { value: 'tasmin', label: 'Daily Minimum Near-Surface Air Temperature' },
+  { value: 'tas99', label: 'Daily Near-Surface Air Temperature (Percentile 99)' },
+  { value: 'tas01', label: 'Daily Near-Surface Air Temperature (Percenrile 1)' },
+  { value: 'pr', label: 'Precipitation' },
+  { value: 'r99ptot', label: 'r99ptot' },
+  { value: 'sfcWind', label: 'Near-Surface Wind Speed' },
   { value: 'rss', label: 'Net surface long wave flux' },
   { value: 'clt', label: 'Total Cloud Fraction' },
   { value: 'prc', label: 'Convective Precipitation' },
   { value: 'tas', label: 'Near-Surface Air Temperature' },
-  { value: 'tasmin', label: 'Daily Minimum Near-Surface Air Temperature' },
   { value: 'wsgsmax', label: 'Daily Maximum Near-Surface Wind Speed of Gust' },
   { value: 'psl', label: 'Sea Level Pressure' },
-  { value: 'pr', label: 'Precipitation' },
-  { value: 'sfcWind', label: 'Near-Surface Wind Speed' },
   { value: 'hurs', label: 'Near-Surface Relative humidity' },
   { value: 'uas', label: 'Eastward Near-Surface Wind' },
   { value: 'vas', label: 'Northward Near-Surface Wind ' },
@@ -22,45 +26,27 @@ const plotvars = [
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
 
-const evalagainsts = [
-  { value: 'ECMWF-ERAINT', label: 'ECMWF-ERAINT' },
-  { value: 'HadUK-grid', label: 'HadUK-grid' }
+const periods = [
+  { value: '19890101-20081231', label: '1989-2008' }
 ]
 
-const regmodels = [
-  { value: 'ALADIN63', label: 'ALADIN63' },
-  { value: 'COSMO-crCLIM-v1-1', label: 'COSMO-crCLIM-v1-1' },
-  { value: 'WRF381P', label: 'WRF381P' },
-  { value: 'REMO2015', label: 'REMO2015' },
-  { value: 'RCA4', label: 'RCA4' },
-  { value: 'RACMO22E', label: 'RACMO22E' },
-  { value: 'HIRHAM5', label: 'HIRHAM5' },
-  { value: 'HadREM3-GA7-05', label: 'HadREM3-GA7-05' },
-  { value: 'RegCM4-6', label: 'RegCM4-6' },
-  { value: 'CCLM4-8-17', label: 'CCLM4-8-17' }
+const seasons = [
+  { value: 'DJF', label: 'Winter' },
+  { value: 'MAM', label: 'Spring' },
+  { value: 'JJA', label: 'Summer' },
+  { value: 'SON', label: 'Autumn' }
 ]
 
-const timeperiods = [
-  { value: 'Jan', label: 'January' },
-  { value: 'Feb', label: 'February' },
-  { value: 'Mar', label: 'March' },
-  { value: 'Apr', label: 'April' },
-  { value: 'May', label: 'May' },
-  { value: 'Jun', label: 'June' },
-  { value: 'Jul', label: 'July' },
-  { value: 'Aug', label: 'August' },
-  { value: 'Sep', label: 'September' },
-  { value: 'Oct', label: 'October' },
-  { value: 'Nov', label: 'November' },
-  { value: 'Dec', label: 'December' },
-  { value: 'DJF', label: 'DJF' },
-  { value: 'MAM', label: 'MAM' },
-  { value: 'JJA', label: 'JJA' },
-  { value: 'SON', label: 'SON' }
+const plottypes = [
+  { value: 'eval-boxplots', label: 'Box plots' },
+  { value: 'eval-maps', label: 'Map plots' },
+  { value: 'eval-pca-gcm', label: 'PCA GCM plots' },
+  { value: 'eval-pca-rcm', label: 'PCA RCM plots' },
+  { value: 'eval-Taylor', label: 'Taylor plots' }
 ]
 
 
-function OptionsRow({setPlotvar, setEvalagainst, setRegmodel, setTimeperiod}){
+function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
 
   return(
     <Row className="pt-4">
@@ -73,23 +59,23 @@ function OptionsRow({setPlotvar, setEvalagainst, setRegmodel, setTimeperiod}){
        </Col>
        <Col>
          <Select
-           options={regmodels}
-           onChange={setRegmodel}
-           placeholder="Select regional model"
+           options={seasons}
+           onChange={setSeason}
+           placeholder="Select season"
            />
        </Col>
        <Col>
          <Select
-           options={evalagainsts}
-           onChange={setEvalagainst}
-           placeholder="Evaluate against"
+           options={periods}
+           onChange={setPeriod}
+           placeholder="Select period"
            />
        </Col>
        <Col>
          <Select
-           options={timeperiods}
-           onChange={setTimeperiod}
-           placeholder="Select time period"
+           options={plottypes}
+           onChange={setPlottype}
+           placeholder="Select plot type"
            />
        </Col>
      </Row>
