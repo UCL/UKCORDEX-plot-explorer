@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Figure from 'react-bootstrap/Figure';
 import FigureImage from 'react-bootstrap/FigureImage';
-import FigureCaption from 'react-bootstrap/FigureCaption';
 
 function FigureRow({plotvar, evalagainst, regmodel, timeperiod}){
 
