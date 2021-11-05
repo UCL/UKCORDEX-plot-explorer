@@ -55,6 +55,7 @@ function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
            options={plotvars}
            onChange={setPlotvar}
            placeholder="Select variable"
+           isMulti
            />
        </Col>
        <Col>
@@ -62,6 +63,7 @@ function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
            options={seasons}
            onChange={setSeason}
            placeholder="Select season"
+           isMulti
            />
        </Col>
        <Col>
@@ -69,6 +71,7 @@ function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
            options={periods}
            onChange={setPeriod}
            placeholder="Select period"
+           isMulti
            />
        </Col>
        <Col>
@@ -76,6 +79,7 @@ function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
            options={plottypes}
            onChange={setPlottype}
            placeholder="Select plot type"
+           isMulti
            />
        </Col>
      </Row>
