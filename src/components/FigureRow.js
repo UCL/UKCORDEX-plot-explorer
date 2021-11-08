@@ -11,16 +11,27 @@ function FigureRow({plotvars, seasons, periods, plottypes}){
   }
   else {
     return(
-      <Row className="py-4">
-         <Figure>
-           <Figure.Image
-             alt="Image NOT found"
-             src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
-           />
-         </Figure>
-       </Row>
+      <>
+        {plotvars.map(plotvar => (
+          seasons.map(season => (
+            periods.map(period => (
+              plottypes.map(plottype => (
+                <Row className="py-4">
+                  <Figure>
+                    <Figure.Image
+                     alt="Image NOT found"
+                     src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
+                    />
+                  </Figure>
+                </Row>
+              ))
+            ))
+          ))
+        ))}
+      </>
     );
   }
 };
+
 
 export default FigureRow;
