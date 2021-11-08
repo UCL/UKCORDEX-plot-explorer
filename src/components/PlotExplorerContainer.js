@@ -6,6 +6,12 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 
 function PlotExplorerRow() {
+  /* This is the entry point to the main page. It handles state passing from
+  user selected choices in OptionsRow to the array of plots displayed by
+  FigureRow.
+  */
+
+  // Handles state for the 4 differe choice types the user has to make
   const [plotvars, setPlotvars] = useState([]);
   const [seasons, setSeasons] = useState([]);
   const [periods, setPeriods] = useState([]);

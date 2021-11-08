@@ -3,6 +3,7 @@ import Select from 'react-select';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// Some of these might not be relevant anymore
 const plotvarOptions = [
   { value: 'fwd', label: 'Surface Snow Amount' },
   { value: 'tas', label: 'Daily Near-Surface Air Temperature' },
@@ -26,10 +27,14 @@ const plotvarOptions = [
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
 
+// TODO: This list will be updated as more plots are generated. It covers ~100
+// years.
 const periodOptions = [
   { value: '19890101-20081231', label: '1989-2008' }
 ]
 
+// TODO: Check season names are OK with research team as typical users might be
+// more familiar with value names e.g. DJF
 const seasonOptions = [
   { value: 'DJF', label: 'Winter' },
   { value: 'MAM', label: 'Spring' },
@@ -37,6 +42,7 @@ const seasonOptions = [
   { value: 'SON', label: 'Autumn' }
 ]
 
+// TODO: More plot types to be added.
 const plottypeOptions = [
   { value: 'eval-boxplots', label: 'Box plots' },
   { value: 'eval-maps', label: 'Map plots' },
@@ -47,7 +53,10 @@ const plottypeOptions = [
 
 
 function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
-
+/*
+  Displays 4 dropdown lists to let user make a selection. Users should be able
+  to select several options in each least.
+*/
   return(
     <Row className="pt-4">
        <Col>
