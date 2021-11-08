@@ -3,7 +3,7 @@ import Select from 'react-select';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const plotvars = [
+const plotvarOptions = [
   { value: 'fwd', label: 'Surface Snow Amount' },
   { value: 'tas', label: 'Daily Near-Surface Air Temperature' },
   { value: 'tasmax', label: 'Daily Maximum Near-Surface Air Temperature' },
@@ -26,18 +26,18 @@ const plotvars = [
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
 
-const periods = [
+const periodOptions = [
   { value: '19890101-20081231', label: '1989-2008' }
 ]
 
-const seasons = [
+const seasonOptions = [
   { value: 'DJF', label: 'Winter' },
   { value: 'MAM', label: 'Spring' },
   { value: 'JJA', label: 'Summer' },
   { value: 'SON', label: 'Autumn' }
 ]
 
-const plottypes = [
+const plottypeOptions = [
   { value: 'eval-boxplots', label: 'Box plots' },
   { value: 'eval-maps', label: 'Map plots' },
   { value: 'eval-pca-gcm', label: 'PCA GCM plots' },
@@ -46,38 +46,38 @@ const plottypes = [
 ]
 
 
-function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
+function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
 
   return(
     <Row className="pt-4">
        <Col>
          <Select
-           options={plotvars}
-           onChange={setPlotvar}
+           options={plotvarOptions}
+           onChange={setPlotvars}
            placeholder="Select variable"
            isMulti
            />
        </Col>
        <Col>
          <Select
-           options={seasons}
-           onChange={setSeason}
+           options={seasonOptions}
+           onChange={setSeasons}
            placeholder="Select season"
            isMulti
            />
        </Col>
        <Col>
          <Select
-           options={periods}
-           onChange={setPeriod}
+           options={periodOptions}
+           onChange={setPeriods}
            placeholder="Select period"
            isMulti
            />
        </Col>
        <Col>
          <Select
-           options={plottypes}
-           onChange={setPlottype}
+           options={plottypeOptions}
+           onChange={setPlottypes}
            placeholder="Select plot type"
            isMulti
            />

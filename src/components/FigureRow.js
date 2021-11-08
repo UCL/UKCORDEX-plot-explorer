@@ -3,9 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Figure from 'react-bootstrap/Figure';
 import FigureImage from 'react-bootstrap/FigureImage';
 
-function FigureRow({plotvar, season, period, plottype}){
+function FigureRow({plotvars, seasons, periods, plottypes}){
 
-  if ([plotvar, season, period, plottype].some(el => el === null)) {
+  if ([plotvars, seasons, periods, plottypes].some(ar => ar.length === 0)) {
     console.log("error, you didnt make enough selections");
     return(null);
   }

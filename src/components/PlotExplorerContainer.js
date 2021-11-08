@@ -6,26 +6,26 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 
 function PlotExplorerRow() {
-  const [plotvar, setPlotvar] = useState(null);
-  const [season, setSeason] = useState(null);
-  const [period, setPeriod] = useState(null);
-  const [plottype, setPlottype] = useState(null);
+  const [plotvars, setPlotvars] = useState([]);
+  const [seasons, setSeasons] = useState([]);
+  const [periods, setPeriods] = useState([]);
+  const [plottypes, setPlottypes] = useState([]);
 
   return (
     <Container>
 
       <OptionsRow
-        setPlotvar={setPlotvar}
-        setSeason={setSeason}
-        setPeriod={setPeriod}
-        setPlottype={setPlottype}
+        setPlotvars={setPlotvars}
+        setSeasons={setSeasons}
+        setPeriods={setPeriods}
+        setPlottypes={setPlottypes}
       />
 
       <FigureRow
-        plotvar={plotvar}
-        season={season}
-        period={period}
-        plottype={plottype}
+        plotvars={plotvars}
+        seasons={seasons}
+        periods={periods}
+        plottypes={plottypes}
       />
 
     </Container>
