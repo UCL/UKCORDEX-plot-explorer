@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/plot-explorer-clean/static/js/main.a6eb2f3e.chunk.js",
-    "main.js.map": "/plot-explorer-clean/static/js/main.a6eb2f3e.chunk.js.map",
-    "runtime-main.js": "/plot-explorer-clean/static/js/runtime-main.64f965df.js",
-    "runtime-main.js.map": "/plot-explorer-clean/static/js/runtime-main.64f965df.js.map",
-    "static/css/2.818011ed.chunk.css": "/plot-explorer-clean/static/css/2.818011ed.chunk.css",
-    "static/js/2.e5414671.chunk.js": "/plot-explorer-clean/static/js/2.e5414671.chunk.js",
-    "static/js/2.e5414671.chunk.js.map": "/plot-explorer-clean/static/js/2.e5414671.chunk.js.map",
-    "static/js/3.7769e5ef.chunk.js": "/plot-explorer-clean/static/js/3.7769e5ef.chunk.js",
-    "static/js/3.7769e5ef.chunk.js.map": "/plot-explorer-clean/static/js/3.7769e5ef.chunk.js.map",
-    "index.html": "/plot-explorer-clean/index.html",
-    "static/css/2.818011ed.chunk.css.map": "/plot-explorer-clean/static/css/2.818011ed.chunk.css.map",
-    "static/js/2.e5414671.chunk.js.LICENSE.txt": "/plot-explorer-clean/static/js/2.e5414671.chunk.js.LICENSE.txt"
+    "main.js": "/UKCORDEX-plot-explorer/static/js/main.4b029202.chunk.js",
+    "main.js.map": "/UKCORDEX-plot-explorer/static/js/main.4b029202.chunk.js.map",
+    "runtime-main.js": "/UKCORDEX-plot-explorer/static/js/runtime-main.6d848ae2.js",
+    "runtime-main.js.map": "/UKCORDEX-plot-explorer/static/js/runtime-main.6d848ae2.js.map",
+    "static/css/2.d8cb5cde.chunk.css": "/UKCORDEX-plot-explorer/static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.0b7b5199.chunk.js": "/UKCORDEX-plot-explorer/static/js/2.0b7b5199.chunk.js",
+    "static/js/2.0b7b5199.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/2.0b7b5199.chunk.js.map",
+    "static/js/3.22472392.chunk.js": "/UKCORDEX-plot-explorer/static/js/3.22472392.chunk.js",
+    "static/js/3.22472392.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/3.22472392.chunk.js.map",
+    "index.html": "/UKCORDEX-plot-explorer/index.html",
+    "static/css/2.d8cb5cde.chunk.css.map": "/UKCORDEX-plot-explorer/static/css/2.d8cb5cde.chunk.css.map",
+    "static/js/2.0b7b5199.chunk.js.LICENSE.txt": "/UKCORDEX-plot-explorer/static/js/2.0b7b5199.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.64f965df.js",
-    "static/css/2.818011ed.chunk.css",
-    "static/js/2.e5414671.chunk.js",
-    "static/js/main.a6eb2f3e.chunk.js"
+    "static/js/runtime-main.6d848ae2.js",
+    "static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.0b7b5199.chunk.js",
+    "static/js/main.4b029202.chunk.js"
   ]
 }
