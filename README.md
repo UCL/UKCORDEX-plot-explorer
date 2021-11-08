@@ -20,11 +20,11 @@ This project uses the following packages:
 1. Clone this repository, e.g.
   ```
 git clone
-  ```
+```
 1. Start the server locally
   ```
    npm start
-  ```
+```
 You should see now a message in your console indicating your web is being
 deployed in localhost:3000 (or different port if 3000 is busy)
 
@@ -50,7 +50,7 @@ try the following:
 1. Run
   ```
   npm build
-  ```
+```
 1. This would have created a build directory that contains an `index.html` file, amongst other things.
 1. Go to the GitHub repository and find "Settings" -> "Pages".
 1. Choose to publish the new `deploy` branch you have just created.
