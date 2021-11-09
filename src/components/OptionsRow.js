@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 // Some of these might not be relevant anymore
 const plotvarOptions = [
-  { value: 'fwd', label: 'fwd - Surface Snow Amount' },
+  { value: 'fwd', label: 'fwd - Proportion of wet days' },
   { value: 'tas', label: 'tas - Daily Near-Surface Air Temperature' },
   { value: 'tasmax', label: 'tasmax - Daily Maximum Near-Surface Air Temperature' },
   { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
