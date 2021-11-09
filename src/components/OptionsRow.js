@@ -3,28 +3,49 @@ import Select from 'react-select';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-// Some of these might not be relevant anymore
+// TODO: Some of these might not be relevant anymore
+// TODO: Check grouping makes sense
 const plotvarOptions = [
-  { value: 'fwd', label: 'fwd - Proportion of wet days' },
-  { value: 'tas', label: 'tas - Daily Near-Surface Air Temperature' },
-  { value: 'tasmax', label: 'tasmax - Daily Maximum Near-Surface Air Temperature' },
-  { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
-  { value: 'tas99', label: 'tas99 - 99th Percentile of Daily Mean Near-Surface Air Temperatures' },
-  { value: 'tas01', label: 'tas01 - 1st Percentile of Daily Mean Near-Surface Air Temperatures' },
-  { value: 'pr', label: 'pr - Daily precipitation rate' },
-  { value: 'r99ptot', label: 'r99ptot - r99ptot' },
-  { value: 'sfcWind', label: 'sfcWind - Near-Surface Wind Speed' },
-  { value: 'rss', label: 'rss - Net surface long wave flux' },
-  { value: 'clt', label: 'clt - Total Cloud Fraction' },
-  { value: 'prc', label: 'prc - Daily rate of Convective Precipitation' },
-  { value: 'tas', label: 'tas - Near-Surface Air Temperature' },
-  { value: 'wsgsmax', label: 'wsgsmax - Daily Maximum Near-Surface Wind Speed of Gust' },
-  { value: 'psl', label: 'psl - Sea Level Pressure' },
-  { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' },
-  { value: 'uas', label: 'uas - Eastward Near-Surface Wind' },
-  { value: 'vas', label: 'vas - Northward Near-Surface Wind ' },
-  { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' },
-  { value: 'rls', label: 'rls - Net surface long wave flux' }
+  {
+    label: "Temperature",
+    options: [
+      { value: 'tas', label: 'tas - Daily Near-Surface Air Temperature' },
+      { value: 'tasmax', label: 'tasmax - Daily Maximum Near-Surface Air Temperature' },
+      { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
+      { value: 'tas99', label: 'tas99 - 99th Percentile of Daily Mean Near-Surface Air Temperatures' },
+      { value: 'tas01', label: 'tas01 - 1st Percentile of Daily Mean Near-Surface Air Temperatures' },
+      { value: 'tas', label: 'tas - Near-Surface Air Temperature' }
+    ],
+  },
+  {
+    label: "Precipitation",
+    options: [
+      { value: 'fwd', label: 'fwd - Proportion of wet days' },
+      { value: 'pr', label: 'pr - Daily precipitation rate' },
+      { value: 'r99ptot', label: 'r99ptot - r99ptot' },
+      { value: 'prc', label: 'prc - Daily rate of Convective Precipitation' },
+      { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' }
+    ],
+  },
+  {
+    label: "Wind",
+    options: [
+      { value: 'sfcWind', label: 'sfcWind - Near-Surface Wind Speed' },
+      { value: 'wsgsmax', label: 'wsgsmax - Daily Maximum Near-Surface Wind Speed of Gust' },
+      { value: 'uas', label: 'uas - Eastward Near-Surface Wind' },
+      { value: 'vas', label: 'vas - Northward Near-Surface Wind' }
+    ],
+  },
+  {
+    label: "Other",
+    options: [
+      { value: 'rss', label: 'rss - Net surface long wave flux' },
+      { value: 'rls', label: 'rls - Net surface long wave flux' },
+      { value: 'clt', label: 'clt - Total Cloud Fraction' },
+      { value: 'psl', label: 'psl - Sea Level Pressure' },
+      { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' }
+    ]
+  }
 ];
 
 // TODO: This list will be updated as more plots are generated. It covers ~100
