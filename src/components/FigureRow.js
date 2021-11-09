@@ -6,7 +6,6 @@ import FigureImage from 'react-bootstrap/FigureImage';
 function FigureRow({plotvar, season, period, plottype}){
 
   if ([plotvar, season, period, plottype].some(el => el === null)) {
-    console.log("error, you didnt make enough selections");
     return(null);
   }
   else {
