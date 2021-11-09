@@ -9,21 +9,21 @@ const plotvarOptions = [
   { value: 'tas', label: 'tas - Daily Near-Surface Air Temperature' },
   { value: 'tasmax', label: 'tasmax - Daily Maximum Near-Surface Air Temperature' },
   { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
-  { value: 'tas99', label: 'tas99 - Daily Near-Surface Air Temperature (Percentile 99)' },
-  { value: 'tas01', label: 'tas01 - Daily Near-Surface Air Temperature (Percenrile 1)' },
-  { value: 'pr', label: 'pr - Precipitation' },
+  { value: 'tas99', label: 'tas99 - 99th Percentile of Daily Mean Near-Surface Air Temperatures' },
+  { value: 'tas01', label: 'tas01 - 1st Percentile of Daily Mean Near-Surface Air Temperatures' },
+  { value: 'pr', label: 'pr - Daily precipitation rate' },
   { value: 'r99ptot', label: 'r99ptot - r99ptot' },
   { value: 'sfcWind', label: 'sfcWind - Near-Surface Wind Speed' },
   { value: 'rss', label: 'rss - Net surface long wave flux' },
   { value: 'clt', label: 'clt - Total Cloud Fraction' },
-  { value: 'prc', label: 'prc - Convective Precipitation' },
+  { value: 'prc', label: 'prc - Daily rate of Convective Precipitation' },
   { value: 'tas', label: 'tas - Near-Surface Air Temperature' },
   { value: 'wsgsmax', label: 'wsgsmax - Daily Maximum Near-Surface Wind Speed of Gust' },
   { value: 'psl', label: 'psl - Sea Level Pressure' },
   { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' },
   { value: 'uas', label: 'uas - Eastward Near-Surface Wind' },
   { value: 'vas', label: 'vas - Northward Near-Surface Wind ' },
-  { value: 'prsn', label: 'prsn - Snowfall Flux' },
+  { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' },
   { value: 'rls', label: 'rls - Net surface long wave flux' }
 ];
 
@@ -44,8 +44,8 @@ const seasonOptions = [
 
 // TODO: More plot types to be added.
 const plottypeOptions = [
-  { value: 'eval-boxplots', label: 'Box plots' },
-  { value: 'eval-maps', label: 'Map plots' },
+  { value: 'eval-boxplots', label: 'Box plots of spread within each ensemble' },
+  { value: 'eval-maps', label: 'Maps of observations & biases' },
   { value: 'eval-pca-gcm', label: 'PCA GCM plots' },
   { value: 'eval-pca-rcm', label: 'PCA RCM plots' },
   { value: 'eval-Taylor', label: 'Taylor plots' }
