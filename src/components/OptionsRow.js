@@ -36,10 +36,10 @@ const periodOptions = [
 // TODO: Check season names are OK with research team as typical users might be
 // more familiar with value names e.g. DJF
 const seasonOptions = [
-  { value: 'DJF', label: 'Winter' },
-  { value: 'MAM', label: 'Spring' },
-  { value: 'JJA', label: 'Summer' },
-  { value: 'SON', label: 'Autumn' }
+  { value: 'DJF', label: 'DJF - Winter' },
+  { value: 'MAM', label: 'MAM - Spring' },
+  { value: 'JJA', label: 'JJA - Summer' },
+  { value: 'SON', label: 'SON - Autumn' }
 ]
 
 // TODO: More plot types to be added.
