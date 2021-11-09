@@ -80,7 +80,7 @@ function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
 */
   return(
     <Row className="pt-4">
-       <Col>
+       <Col xs={5}>
          <Select
            options={plotvarOptions}
            onChange={setPlotvars}
@@ -104,7 +104,7 @@ function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
            isMulti
            />
        </Col>
-       <Col>
+       <Col xs={3}>
          <Select
            options={plottypeOptions}
            onChange={setPlottypes}
