@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
 
 function PlotExplorerRow() {
   /* This is the entry point to the main page. It handles state passing from
