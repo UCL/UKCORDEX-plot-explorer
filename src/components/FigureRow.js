@@ -29,7 +29,7 @@ function FigureRow({plotvars, seasons, periods, plottypes}){
                 <Row className="py-4">
                   <Figure>
                     <FigureImage
-                     alt="Image not found for ${plotvar.value} ${plottype.value} ${season.value} ${period.value}"
+                     href={`Image not found for ${plotvar.value} ${plottype.value} ${season.value} ${period.value}`}
                      src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
                     />
                   </Figure>
