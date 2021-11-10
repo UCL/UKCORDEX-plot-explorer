@@ -2,30 +2,34 @@ import React, { useState } from "react";
 import FigureRow from "./FigureRow";
 import OptionsRow from "./OptionsRow";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
 
 function PlotExplorerRow() {
-  const [plotvar, setPlotvar] = useState(null);
-  const [season, setSeason] = useState(null);
-  const [period, setPeriod] = useState(null);
-  const [plottype, setPlottype] = useState(null);
+  /* This is the entry point to the main page. It handles state passing from
+  user selected choices in OptionsRow to the array of plots displayed by
+  FigureRow.
+  */
+
+  // Handles state for the 4 differe choice types the user has to make
+  const [plotvars, setPlotvars] = useState([]);
+  const [seasons, setSeasons] = useState([]);
+  const [periods, setPeriods] = useState([]);
+  const [plottypes, setPlottypes] = useState([]);
 
   return (
     <Container>
 
       <OptionsRow
-        setPlotvar={setPlotvar}
-        setSeason={setSeason}
-        setPeriod={setPeriod}
-        setPlottype={setPlottype}
+        setPlotvars={setPlotvars}
+        setSeasons={setSeasons}
+        setPeriods={setPeriods}
+        setPlottypes={setPlottypes}
       />
 
       <FigureRow
-        plotvar={plotvar}
-        season={season}
-        period={period}
-        plottype={plottype}
+        plotvars={plotvars}
+        seasons={seasons}
+        periods={periods}
+        plottypes={plottypes}
       />
 
     </Container>

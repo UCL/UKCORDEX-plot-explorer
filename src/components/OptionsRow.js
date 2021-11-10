@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Select from 'react-select';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const plotvars = [
+// Some of these might not be relevant anymore
+const plotvarOptions = [
   { value: 'fwd', label: 'Surface Snow Amount' },
   { value: 'tas', label: 'Daily Near-Surface Air Temperature' },
   { value: 'tasmax', label: 'Daily Maximum Near-Surface Air Temperature' },
@@ -26,18 +27,23 @@ const plotvars = [
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
 
-const periods = [
+// TODO: This list will be updated as more plots are generated. It covers ~100
+// years.
+const periodOptions = [
   { value: '19890101-20081231', label: '1989-2008' }
 ]
 
-const seasons = [
+// TODO: Check season names are OK with research team as typical users might be
+// more familiar with value names e.g. DJF
+const seasonOptions = [
   { value: 'DJF', label: 'Winter' },
   { value: 'MAM', label: 'Spring' },
   { value: 'JJA', label: 'Summer' },
   { value: 'SON', label: 'Autumn' }
 ]
 
-const plottypes = [
+// TODO: More plot types to be added.
+const plottypeOptions = [
   { value: 'eval-boxplots', label: 'Box plots' },
   { value: 'eval-maps', label: 'Map plots' },
   { value: 'eval-pca-gcm', label: 'PCA GCM plots' },
@@ -46,36 +52,43 @@ const plottypes = [
 ]
 
 
-function OptionsRow({setPlotvar, setSeason, setPeriod, setPlottype}){
-
+function OptionsRow({setPlotvars, setSeasons, setPeriods, setPlottypes}){
+/*
+  Displays 4 dropdown lists to let user make a selection. Users should be able
+  to select several options in each least.
+*/
   return(
     <Row className="pt-4">
        <Col>
          <Select
-           options={plotvars}
-           onChange={setPlotvar}
+           options={plotvarOptions}
+           onChange={setPlotvars}
            placeholder="Select variable"
+           isMulti
            />
        </Col>
        <Col>
          <Select
-           options={seasons}
-           onChange={setSeason}
+           options={seasonOptions}
+           onChange={setSeasons}
            placeholder="Select season"
+           isMulti
            />
        </Col>
        <Col>
          <Select
-           options={periods}
-           onChange={setPeriod}
+           options={periodOptions}
+           onChange={setPeriods}
            placeholder="Select period"
+           isMulti
            />
        </Col>
        <Col>
          <Select
-           options={plottypes}
-           onChange={setPlottype}
+           options={plottypeOptions}
+           onChange={setPlottypes}
            placeholder="Select plot type"
+           isMulti
            />
        </Col>
      </Row>
