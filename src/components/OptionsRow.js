@@ -12,7 +12,7 @@ const plotvarOptions = [
   { value: 'tas99', label: 'Daily Near-Surface Air Temperature (Percentile 99)' },
   { value: 'tas01', label: 'Daily Near-Surface Air Temperature (Percenrile 1)' },
   { value: 'pr', label: 'Precipitation' },
-  { value: 'r99ptot', label: 'r99ptot' },
+  { value: 'r99ptot', label: 'Total precipitation on days exceeding the 99th percentile' },
   { value: 'sfcWind', label: 'Near-Surface Wind Speed' },
   { value: 'rss', label: 'Net surface long wave flux' },
   { value: 'clt', label: 'Total Cloud Fraction' },
