@@ -17,14 +17,16 @@ This project uses the following packages:
 * react-bootstrap
 
 ### To run this website locally
+
 1. Clone this repository, e.g.
-  ```
-git clone
-  ```
+
+    ```
+    git clone 
+    ```
 1. Start the server locally
-  ```
-   npm start
-  ```
+    ```
+    npm start
+    ```
 You should see now a message in your console indicating your web is being
 deployed in localhost:3000 (or different port if 3000 is busy)
 
@@ -48,9 +50,9 @@ If it still doesn't seem to be deploying the latest changes correctly, you can
 try the following:
 1. Create a `deploy` version of your `feature` or `bugfix` branch with the same content.
 1. Run
-  ```
-  npm build
-  ```
+    ```
+    npm build 
+    ```
 1. This would have created a build directory that contains an `index.html` file, amongst other things.
 1. Go to the GitHub repository and find "Settings" -> "Pages".
 1. Choose to publish the new `deploy` branch you have just created.
