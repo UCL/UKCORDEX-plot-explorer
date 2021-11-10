@@ -2,20 +2,24 @@ import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Figure from 'react-bootstrap/Figure';
 import FigureImage from 'react-bootstrap/FigureImage';
-import FigureCaption from 'react-bootstrap/FigureCaption';
 
-function FigureRow({plotvar, evalagainst, regmodel, timeperiod}){
+function FigureRow({plotvar, season, period, plottype}){
 
-  return(
-    <Row className="py-4">
-       <Figure>
-         <Figure.Image
-           alt="Image NOT found"
-           src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_${plotvar.value}_${evalagainst.value}_${regmodel.value}_${timeperiod.value}.png`}
-         />
-       </Figure>
-     </Row>
-  );
+  if ([plotvar, season, period, plottype].some(el => el === null)) {
+    return(null);
+  }
+  else {
+    return(
+      <Row className="py-4">
+         <Figure>
+           <Figure.Image
+             alt="Image NOT found"
+             src={`${process.env.PUBLIC_URL}/images/${plotvar.value}/${plottype.value}_${plotvar.value}_${season.value}_${period.value}.png`}
+           />
+         </Figure>
+       </Row>
+    );
+  }
 };
 
 export default FigureRow;
