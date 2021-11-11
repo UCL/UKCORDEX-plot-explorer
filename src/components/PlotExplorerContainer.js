@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import FigureRow from "./FigureRow";
-import OptionsRow from "./OptionsRow";
 import Container from "react-bootstrap/Container";
+import FigureRow from "./FigureRow";
+import MenuHeader from "./MenuHeader";
+import OptionsRow from "./OptionsRow";
 
 function PlotExplorerRow() {
   /* This is the entry point to the main page. It handles state passing from
@@ -17,6 +18,8 @@ function PlotExplorerRow() {
 
   return (
     <Container>
+
+      <MenuHeader/>
 
       <OptionsRow
         setPlotvars={setPlotvars}
