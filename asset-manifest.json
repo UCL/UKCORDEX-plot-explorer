@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/UKCORDEX-plot-explorer/static/js/main.910495dc.chunk.js",
-    "main.js.map": "/UKCORDEX-plot-explorer/static/js/main.910495dc.chunk.js.map",
-    "runtime-main.js": "/UKCORDEX-plot-explorer/static/js/runtime-main.bf6b8122.js",
-    "runtime-main.js.map": "/UKCORDEX-plot-explorer/static/js/runtime-main.bf6b8122.js.map",
+    "main.js": "/UKCORDEX-plot-explorer/static/js/main.d4c87953.chunk.js",
+    "main.js.map": "/UKCORDEX-plot-explorer/static/js/main.d4c87953.chunk.js.map",
+    "runtime-main.js": "/UKCORDEX-plot-explorer/static/js/runtime-main.95604a95.js",
+    "runtime-main.js.map": "/UKCORDEX-plot-explorer/static/js/runtime-main.95604a95.js.map",
     "static/css/2.d8cb5cde.chunk.css": "/UKCORDEX-plot-explorer/static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.0ff94eb2.chunk.js": "/UKCORDEX-plot-explorer/static/js/2.0ff94eb2.chunk.js",
-    "static/js/2.0ff94eb2.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/2.0ff94eb2.chunk.js.map",
-    "static/js/3.c4d0f5cf.chunk.js": "/UKCORDEX-plot-explorer/static/js/3.c4d0f5cf.chunk.js",
-    "static/js/3.c4d0f5cf.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/3.c4d0f5cf.chunk.js.map",
+    "static/js/2.52b50c93.chunk.js": "/UKCORDEX-plot-explorer/static/js/2.52b50c93.chunk.js",
+    "static/js/2.52b50c93.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/2.52b50c93.chunk.js.map",
+    "static/js/3.ab5cd9f0.chunk.js": "/UKCORDEX-plot-explorer/static/js/3.ab5cd9f0.chunk.js",
+    "static/js/3.ab5cd9f0.chunk.js.map": "/UKCORDEX-plot-explorer/static/js/3.ab5cd9f0.chunk.js.map",
     "index.html": "/UKCORDEX-plot-explorer/index.html",
     "static/css/2.d8cb5cde.chunk.css.map": "/UKCORDEX-plot-explorer/static/css/2.d8cb5cde.chunk.css.map",
-    "static/js/2.0ff94eb2.chunk.js.LICENSE.txt": "/UKCORDEX-plot-explorer/static/js/2.0ff94eb2.chunk.js.LICENSE.txt"
+    "static/js/2.52b50c93.chunk.js.LICENSE.txt": "/UKCORDEX-plot-explorer/static/js/2.52b50c93.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf6b8122.js",
+    "static/js/runtime-main.95604a95.js",
     "static/css/2.d8cb5cde.chunk.css",
-    "static/js/2.0ff94eb2.chunk.js",
-    "static/js/main.910495dc.chunk.js"
+    "static/js/2.52b50c93.chunk.js",
+    "static/js/main.d4c87953.chunk.js"
   ]
 }
