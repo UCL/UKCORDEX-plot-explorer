@@ -14,17 +14,16 @@ const plotvarOptions = [
       { value: 'tasmin', label: 'tasmin - Daily Minimum Near-Surface Air Temperature' },
       { value: 'tas99', label: 'tas99 - 99th Percentile of Daily Mean Near-Surface Air Temperatures' },
       { value: 'tas01', label: 'tas01 - 1st Percentile of Daily Mean Near-Surface Air Temperatures' },
-      { value: 'tas', label: 'tas - Near-Surface Air Temperature' }
     ],
   },
   {
     label: "Precipitation",
     options: [
-      { value: 'fwd', label: 'fwd - Proportion of wet days' },
       { value: 'pr', label: 'pr - Daily precipitation rate' },
-      { value: 'r99ptot', label: 'r99ptot - r99ptot' },
       { value: 'prc', label: 'prc - Daily rate of Convective Precipitation' },
-      { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' }
+      { value: 'prsn', label: 'prsn - Daily rate of precipitation falling as snow' },
+      { value: 'fwd', label: 'fwd - Proportion of wet days' },
+      { value: 'r99ptot', label: 'r99ptot - r99ptot' }
     ],
   },
   {
@@ -39,11 +38,11 @@ const plotvarOptions = [
   {
     label: "Other",
     options: [
-      { value: 'rss', label: 'rss - Net surface long wave flux' },
-      { value: 'rls', label: 'rls - Net surface long wave flux' },
       { value: 'clt', label: 'clt - Total Cloud Fraction' },
+      { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' },
       { value: 'psl', label: 'psl - Sea Level Pressure' },
-      { value: 'hurs', label: 'hurs - Near-Surface Relative humidity' }
+      { value: 'rss', label: 'rss - Net surface long wave flux' },
+      { value: 'rls', label: 'rls - Net surface long wave flux' }
     ]
   }
 ];
