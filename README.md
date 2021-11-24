@@ -11,7 +11,7 @@ This website is built using React. You will need:
 
 * npm (Last tested with npm 8.0.0)
 
-This project uses the following packages:
+This project has the following dependencies:
 * create-react-app
 * react-select
 * react-bootstrap
@@ -27,6 +27,11 @@ This project uses the following packages:
     ```
     npm start
     ```
+1. Install all dependencies
+   ```
+   npm install
+   ```
+
 You should see now a message in your console indicating your web is being
 deployed in localhost:3000 (or different port if 3000 is busy)
 
