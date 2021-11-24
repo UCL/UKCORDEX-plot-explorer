@@ -15,6 +15,7 @@ This project has the following dependencies:
 * create-react-app
 * react-select
 * react-bootstrap
+* gh-pages
 
 ### To run this website locally
 
@@ -23,25 +24,32 @@ This project has the following dependencies:
     ```
     git clone 
     ```
-1. Start the server locally
-    ```
-    npm start
-    ```
+1. Change directories to main folder:
+   ```
+   cd UKCORDEX-plot-explorer
+   ```
 1. Install all dependencies
    ```
    npm install
    ```
+1. Start the server locally
+    ```
+    npm start
+    ```
+
 
 You should see now a message in your console indicating your web is being
-deployed in localhost:3000 (or different port if 3000 is busy)
+deployed in localhost:3000 (or different port if 3000 is busy). 
+Note that you don't need to kill this process and deploy it again if you want to work on changes to the code - they will update in the locally deployed app immediately after saving.
 
-### To deploy this website
-This project uses React's gh-pages module. In order to deploy automatically a
-new version you can:
+### To deploy this website to GH Pages
+This project uses React's gh-pages module. In order to deploy your latest local changes automatically to GH Pages you need to run:
 
 ```
 npm run deploy
 ```
+
+Note we should always aim to deploy the version of the website that in the `main` branch, although it might not always be the case (e.g. we need to demo something that is not approved yet).
 
 ### To test this website
 There are no tests just yet.
@@ -49,7 +57,7 @@ There are no tests just yet.
 ### Troubleshooting
 #### If gh-pages doesn't appear to work
 First, give it time, as it can take a couple minutes to deploy the latest
-changes.
+changes. Sometimes there's an indication [in the GH Pages settings](https://github.com/UCL/UKCORDEX-plot-explorer/settings/pages) that the website is ready to be deployed, which means it's about to be deployed.
 
 If it still doesn't seem to be deploying the latest changes correctly, you can
 try the following:
