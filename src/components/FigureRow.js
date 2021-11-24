@@ -13,7 +13,7 @@ function FigureRow({plotvars, seasons, periods, plottypes}){
 
   // Don't try to show a plot until the user has selected at least one value of
   // each dropdown
-  if ([plotvars, seasons, periods, plottypes].some(el => el === null)) {
+  if ([plotvars, seasons, periods, plottypes].some((el) => el.length === 0)) {
     return(null);
   }
   else {
