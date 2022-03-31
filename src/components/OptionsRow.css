@@ -1,0 +1,105 @@
+/* Styling for the tags in the labels of the dropdowns */
+/*********************** For dropdown text  *******************************/
+.plotdropdown {
+  font-size: 80%;
+  line-height: 0.9em;
+}
+
+/*********************** Section for PlotVar Dropdown **********************/
+.description {
+  font-size: 75%;
+  margin-top: 0.2em;
+}
+.tag {
+  border-radius: 10%;
+  margin-right: 0.3em;
+  padding: 0.1em;
+  border: 2px solid;
+  font-size: 85%;
+}
+
+.core {
+  background-color: rgb(115, 206, 112);
+  border-color: rgb(53, 138, 50);
+  color: rgb(15, 71, 13);
+}
+
+.temp {
+  background-color: rgb(247, 218, 166);
+  border-color: rgb(236, 141, 52);
+  color: rgb(218, 108, 6);
+}
+
+.precip {
+  background-color: rgb(94, 169, 240);
+  border-color: rgb(22, 129, 201);
+  color: rgb(7, 41, 119);
+}
+
+.wind {
+  background-color: rgb(147, 222, 245);
+  border-color: rgb(49, 177, 228);
+  color: rgb(15, 102, 136);
+}
+
+.extreme_pr {
+  background-color: rgb(78, 142, 201);
+  border-color: rgb(22, 129, 201);
+  color: rgb(13, 35, 87);
+}
+
+.extreme_wind {
+  background-color: rgb(140, 197, 214);
+  border-color: rgb(49, 177, 228);
+  color: rgb(12, 58, 77);
+}
+
+.other {
+  background-color: rgba(183, 176, 247, 0.952);
+  border-color: rgba(91, 64, 211, 0.938);
+  color: rgba(48, 13, 202, 0.904);
+}
+
+/*********************** Section for Season Dropdown **********************/
+
+.DJF {
+  background-color: #e8f7fb;
+  border-color: #dff8f9;
+  color: #65a4aa;
+}
+
+
+.MAM {
+  background-color: #ccffe5;
+  border-color: #b2ffd8;
+  color: #23c071;
+}
+
+
+.JJA {
+  background-color: #f0bbcd;
+  border-color: #eb8291;
+  color: #eb7777;
+}
+
+
+.SON {
+  background-color: #eb8b62;
+  border-color: #bd4e33;
+  color: #a94343;
+}
+
+.annual {
+  background-color: #b876df;
+  border-color: #6d17c4;
+  color: #471777;
+}
+
+/******************* Section for Plot Type Dropdown ********************/
+.icon {
+  margin-right: 0.3em;
+  border: none;
+}
+.ptype-desc {
+  font-size: 90%;
+}
