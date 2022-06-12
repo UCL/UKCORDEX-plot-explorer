@@ -10,5 +10,5 @@ https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer/
 
 ## Developer's guide
 
-The code in this repository has been moved to [the Plot Explorer's development repository](https://github-pages.ucl.ac.uk/UKCORDEX-plot-explorer-dev/#/how-to-use).
+The code in this repository has been moved to [the Plot Explorer's development repository](https://github.com/UCL/UKCORDEX-plot-explorer-dev).
 That repository contains details on the workflow for adding new features and bug fixes, as well as instructions on how to run, test and deploy the codebase.
